@@ -1,0 +1,32 @@
+ //classes are blueprint for creating the objects
+    //groups method and data
+    class human {
+
+      //properties
+      age=18;//public
+     #wt=56; //private
+      ht=175;
+      //behavior
+      walking(){
+        console.log('walk');
+
+      }
+run(){
+  console.log('run'
+  );
+
+}
+//accessing private member within the class
+
+weight(){
+  console.log(this.#wt);
+}
+
+
+}
+ let obj = new human;
+ console.log(obj.age);
+ //console.log(obj.#wt);gives syntax error 
+ //call function 
+ obj.walking();
+ obj.weight();
