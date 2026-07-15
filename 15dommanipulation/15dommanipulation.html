@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="para" class="text">para</p>
+
+
+  <h1 id="head" class="text">
+    heading 
+  </h1>
+  <button> <p>enter</p> </button>
+  <div id="d1">
+    <p>
+      this is a para
+     <span >        text  </span>
+    </p>
+    <p>
+      second para
+    </p>
+  </div>
+  <script>
+    //window object is global object highest in heiarchy 
+
+
+
+// DOM   document object model 
+//when html is converted to js object that is dom
+ 
+
+//BOM browser object model 
+
+//html elememts can be changed by class name,id and tagname
+
+
+//fetching elements 
+//getElement
+console.log(document.getElementById("para"));
+console.log(document.getElementsByClassName("text"));//plural
+console.log(document.getElementsByTagName("h1"));//plural
+
+
+
+
+
+
+//querySelector
+console.log(document.querySelector("#para"));//for id use #
+
+console.log(document.querySelector(".text"));//for class . ,returns first value only
+
+console.log(document.querySelector('p'));//for tag use as it is,,returns first value only
+
+console.log(document.querySelectorAll('.text'));//returns all
+
+
+//using dollar sign can also be used
+
+
+
+
+
+//updating values 
+const button=document.querySelector('button');
+console.log(button.innerHTML);
+button.innerHTML='<p>press the button<p>';//will change value
+
+
+
+
+//fetching the text content 
+  let element=document.querySelector('#d1');
+  console.log(element.textContent);
+
+console.log(element.innerText);//display like ui
+
+
+
+
+//creating element
+
+let  heading = document.createElement('h1');
+console.log(heading);
+heading.innerHTML='hello';//or 
+// heading.textContent="heyyy";
+
+
+//adding element 
+
+let body=document.querySelector('body');
+body.appendChild(heading);//making child in end
+console.log(body);
+document
+
+
+
+
+
+  </script>
+</body>
+</html>
+
